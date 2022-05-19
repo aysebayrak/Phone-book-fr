@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="col-md-10 mt-5">
+    <div class="card">
+
+      <div class="card-header">
+        <h5 class="card-title text-center">Edit</h5>
+      </div>
+
+      <div class="card-body">
+
+        <form [formGroup]="customerUpdateForm">
+
+          <div class="mb-3 row">
+            <label for="customerName" class="col-sm-2 col-form-label">Customer Name</label>
+            <div class="col-sm-10">
+              <input type="text" id="customerName" formControlName="customerName" class="form-control"/>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="customerBirthDate" class="col-sm-2 col-form-label">Customer BirthDate</label>
+            <div class="col-sm-10">
+              <input type="text" id="customerBirthDate" formControlName="customerBirthDate" class="form-control"/>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="customerPhoneNumber" class="col-sm-2 col-form-label">Customer PhoneNumber</label>
+            <div class="col-sm-10">
+              <input type="text" id="customerPhoneNumber" formControlName="customerPhoneNumber" class="form-control"/>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="customerDescription" class="col-sm-2 col-form-label">Customer Description</label>
+            <div class="col-sm-10">
+              <input type="text" id="customerDescription" formControlName="customerDescription" class="form-control"/>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="card-footer">
+        <button class="btn btn-warning w-100" (click)="updateCustomer()">Edit</button>
+      </div>
+
+      <div class="card-footer">
+        <button class="btn btn-warning w-100" routerLink="/customers/"> Cancel </button>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
